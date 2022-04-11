@@ -34,11 +34,12 @@
             position: absolute;
             top: 500px;
             right: 700px;
-            color: darkslategray;
-            background-color: palegreen;
+            color: aliceblue;
+            background-color: rgb(66, 131, 91);
             padding: 15px;
             font-size: 20px;
             border: none;
+            cursor: pointer;
         }
 
         .LinksList {
@@ -62,15 +63,19 @@
             display: inline;
             margin: 5px;
         }
-        #LearnMore {
+        .learnmore
+        {
             font-family: 'Garamond';
             font-size: 25px;
             text-align: center;
             color: darkslategray;
             position: absolute;
-            top: 600px;
-            right: 700px;
-            background-color: palegreen;
+            width: 100%;
+            top: 98%;
+            background-color: whitesmoke;
+        }
+        #H3{
+            top: 90%;
         }
     </style>
 </head>
@@ -90,11 +95,10 @@
         <h1>French restaurant</h1>
         <h2> we're The Best restaurant In Town</h2>
     </div>
-
-    <div>
-        <button type="button" onclick="LearnMore()">Learn More</button>&ensp;
         <button onclick=" location.href='Booking.html'" style="right:550px;">Book A Visit</button>
+        <button type="button" onclick="LearnMore()">Learn More</button>
+        <h3 id="H3" class="learnmore"></h3>
+    <div id="LearnMore" class="learnmore"> 
     </div>
-    <div id="LearnMore"></div>
 </body>
 </html> 
